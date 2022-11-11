@@ -1,0 +1,26 @@
+header{
+    color: white;
+    font-size: 90px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+body{
+    background-color: orange;
+    text-align: center;
+
+}
+button{
+    width: 190px;
+    height: 90px;
+    background-color: orange;
+    color: white;
+}
+.display{
+    font-size: xx-large;
+    height: 40px;
+    width: 140px;
+   color: white;
+    /* margin-top: 30px; */
+    /* margin-bottom: 30px; */
+    margin: 30px auto 30px auto;
+}
