@@ -15,19 +15,32 @@ stopst.addEventListener('click',stoptime)
 
 function startbn() {
     countTens++
-    
-    tens.innerHTML=countTens
+    if (countTens<10){
+        tens.innerHTML='0'+countTens
 
+    }
+    else {tens.innerHTML=countTens}
+    
 if  (countTens ===99){
     countTens=00
     countSec++
     sec.innerHTML=countSec
-    
+
+   if (countSec<10){
+    sec.innerHTML='0'+countSec
+
+   } 
+   else{   sec.innerHTML=countSec }
     if (countSec===60) {
         countSec=00
   countHundred++
   hundred.innerHTML=countHundred
+  if (countHundred<10){
+    hundred.innerHTML='0'+countHundred
 
+  }
+  else {hundred.innerHTML=countHundred
+  }
 countTens++
 
 }
@@ -51,9 +64,14 @@ function stoptime() {
 }
 function resetst() {
     clearInterval(intervals)
-    hundred.innerHTML=0
-    sec.innerHTML=0
-    tens.innerHTML=0
+    countTens=00
+    countHundred=00
+    countSec=00
+    
+    hundred.innerHTML='0'+countHundred
+    sec.innerHTML ='0'+countSec
+    tens.innerHTML='0'+countTens
+   
     
     
     
